@@ -112,16 +112,16 @@ Login to dockerhub from your server
 
 Create an tag of Docker Image :
 
-
-
-
+```
+docker tag <Source_image>:<tag> <dockerhub_username>/new-img:<tag>
+```
 
 ### **Step 2: Push the Docker image to Dockerhub**
 
 Push the Docker image to ECR using the push commands on the console:
 
 ```
-docker push <dockerhub_username>:<tag>
+docker push  <dockerhub_username>/new-img:<tag>
 ```
 
 ## **Part 4: Creating an EKS cluster and deploying the app using Python**
